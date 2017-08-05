@@ -31,7 +31,8 @@ def portCheck(host, port):
     return True
 
 def hostAlive(hostname):
-    response = Popen("ping -c 1 -w2 " + hostname + " > /dev/null 2>&1", shell=True).wait()
+    response = os.system("ping -c 1 -w2 " + hostname + " > /dev/null 2>&1")
+    #response = Popen("ping -c 1 -w2 " + hostname + " > /dev/null 2>&1", shell=True).wait()
     if response == 0:
         return True
     else:
