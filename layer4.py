@@ -1,5 +1,5 @@
 import socket, struct, random
-import os
+from subprocess import Popen
 
 def gen():
     return socket.inet_ntoa(struct.pack('>I', random.randint(1, 0xffffffff)))
@@ -31,7 +31,7 @@ def portCheck(host, port):
     return True
 
 def hostAlive(hostname):
-    response = os.system("ping -c 1 -w2 " + hostname + " > /dev/null 2>&1")
+    response = Popen("ping -c 1 -w2 " + hostname + " > /dev/null 2>&1", shell=True).wait()
     if response == 0:
         return True
     else:
