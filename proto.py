@@ -3,12 +3,12 @@ s = pxssh.pxssh()
 
 class ssh:
     def connect(ip, user, upass):
-        print "[*] Trying to login with " + user + ":" + upass + " on " + ip
+        print ("[*] Trying to login with " + user + ":" + upass + " on " + ip)
         if not s.login (ip, user, upass):
-            print "[-] Failed : "+ip+":"+user+":"+upass
+            print ("[-] Failed : "+ip+":"+user+":"+upass)
             print str(s)
         else:
-            print "[+] Success : "+ip+":"+user+":"+upass
+            print ("[+] Success : "+ip+":"+user+":"+upass)
             with open("sshLogins.txt", "a") as myfile:
                 myfile.write(ip+":"+user+":"+upass + '\n')
             s.logout()
