@@ -1,4 +1,4 @@
-import layer4, proto
+import layer4
 
 while (True):
     ip = layer4.gen()
