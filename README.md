@@ -1,4 +1,7 @@
 # Scan Works
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f4cfe616d6a243bcb876be204f98e43d)](https://www.codacy.com/app/Tlgyt/Scan-Works?utm_source=github.com&utm_medium=referral&utm_content=Tlgyt/Scan-Works&utm_campaign=badger)
+
 *Easy to use python libary for scanning and interacting with internet.*
 
 ---  
