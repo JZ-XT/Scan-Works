@@ -7,15 +7,18 @@ class scanner(object):
         self.toFind = 10
         self.startIP = ''
         self.endIP = ''
-        self.port = 22
+        self.port = 22 # Set To 0 to find only alive ips
     
     def scan(self):
         ips = []
         if self.rand:
             found = 0
-            while (found <= self.toFind):
+            while (found <= self.toFind - 1):
                 ip = layer4.gen()
                 if (layer4.hostAlive(ip)):
+                    if (self.port == 0):
+                        ips.append(ip)
+                        found += 1
                     if (layer4.portCheck(ip, self.port)):
                         ips.append(ip)
                         found += 1
@@ -27,10 +30,3 @@ class scanner(object):
                     if (layer4.portCheck(ip, self.port)):
                         ips.append(ip)
             return ips
-
-
-
-s = scanner()
-s.toFind = 1
-ips = s.scan()
-print(ips)
