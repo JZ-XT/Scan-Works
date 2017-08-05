@@ -14,17 +14,11 @@ From scanning the entire internet for http/s servers to automaticly hacking all 
 Our code is useable as a module system for our fellow devs. Providing individual files for diffrent tasks for example: layer4.py provides all the functions for interacting with tcp/ip including: ip and ip range generation, port scanning, and host alive checks
 
 ### Example Usage
-Basic Http Scanner using random ip generation
+Http Scanner using default settings
 ```python
-import layer4
-while (True):
-    ip = layer4.gen()
-    if (layer4.hostAlive(ip)):
-        if (layer4.portCheck(ip, 80)):
-            print '[+] Http Is Running On\t:\t'+ip
-        else:
-            print '[-] Http Is Not Running on\t:\t'+ip
-    else:
-        pass
+from scanworks import scanner
+scanner.port = 80
+ips = scanner.scan()
+print(ips)
 ```
 
