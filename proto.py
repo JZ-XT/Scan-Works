@@ -10,7 +10,7 @@ class ssh:
 		else:
 			print ("[+] Success : "+ip+":"+user+":"+upass)
 			with open("sshLogins.txt", "a") as myfile:
-			myfile.write(ip+":"+user+":"+upass + '\n')
+				myfile.write(ip+":"+user+":"+upass + '\n')
 			s.logout()
 
 	def checkKippo(ip):
