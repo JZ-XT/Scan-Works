@@ -1,5 +1,5 @@
-import socket, struct, random
-from subprocess import Popen
+import socket, struct, random, os
+#from subprocess import Popen
 
 def gen():
     return socket.inet_ntoa(struct.pack('>I', random.randint(1, 0xffffffff)))
