@@ -27,7 +27,7 @@ def portCheck(host, port):
         s.settimeout(1)
         s.connect((host, port))
         s.close()
-    except:
+    except Exception:
         return False
     return True
 
