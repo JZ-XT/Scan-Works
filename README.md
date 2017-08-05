@@ -3,10 +3,9 @@
 
 ---  
 <p align="center">  
-  <img src="http://i.imgur.com/BsbjJzf.png">  
+  <img src="http://i.imgur.com/BsbjJzf.png"> 
+  <img src="http://i.imgur.com/h4L0mLF.png"> 
 </p>  
-
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f4cfe616d6a243bcb876be204f98e43d)](https://www.codacy.com/app/Tlgyt/Scan-Works?utm_source=github.com&utm_medium=referral&utm_content=Tlgyt/Scan-Works&utm_campaign=badger)
 
 ### What is it?
 Scan Works is a easy to use python libary designed for scanning the internet. Designed ground up for easy of use Scan Works provides several modules for scanning and interacting with several protocols allowing complex systems to be built on top of it.
