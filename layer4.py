@@ -22,7 +22,6 @@ def genRange(start_ip, end_ip):
 
 def portCheck(host, port):
     try:
-        host_addr = socket.gethostbyname(host)
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         s.settimeout(1)
         s.connect((host, port))
