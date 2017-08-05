@@ -4,7 +4,6 @@
 ---  
 <p align="center">  
   <img src="http://i.imgur.com/BsbjJzf.png"> 
-  <img src="http://i.imgur.com/h4L0mLF.png"> 
 </p>  
 
 ### What is it?
