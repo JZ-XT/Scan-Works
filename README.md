@@ -17,6 +17,7 @@ Our code is useable as a module system for our fellow devs. Providing individual
 Http Scanner using default settings
 ```python
 from scanworks import scanner
+scanner = scanner()
 scanner.port = 80
 ips = scanner.scan()
 print(ips)
