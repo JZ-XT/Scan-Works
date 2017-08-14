@@ -4,7 +4,7 @@
 ---  
 <p align="center">  
   <img src="http://i.imgur.com/BsbjJzf.png"> 
-</p>  
+</p> 
 
 ### What is it?
 Scan Works is a easy to use python libary designed for scanning the internet. Designed ground up for easy of use Scan Works provides several modules for scanning and interacting with several protocols allowing complex systems to be built on top of it.
@@ -12,6 +12,8 @@ From scanning the entire internet for http/s servers to automaticly hacking all 
 
 ### It's *Modular*
 Our code is useable as a module system for our fellow devs. Providing individual files for diffrent tasks for example: layer4.py provides all the functions for interacting with tcp/ip including: ip and ip range generation, port scanning, and host alive checks
+
+Currently only successfully tested on Linux, Windows is partial tested and is Unsupported.
 
 ### Example Usage
 Http Scanner using default settings
